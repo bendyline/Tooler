@@ -17,7 +17,7 @@ namespace Bendyline.Base
                 return filePath.Substring(0, lastSlash + 1);
             }
 
-            return filePath;
+            return String.Empty;
         }
 
         public static String GetTextFromFile(String filePath)

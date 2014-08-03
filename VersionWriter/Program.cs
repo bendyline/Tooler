@@ -25,7 +25,7 @@ namespace Bendyline.Tools.VersionWriter
 
             String targetDirectoryPath = FileUtilities.GetDirectoryPathFromFilePath(args[1]);
 
-            if (!Directory.Exists(targetDirectoryPath))
+            if (!String.IsNullOrEmpty(targetDirectoryPath) && !Directory.Exists(targetDirectoryPath))
             {
                 Directory.CreateDirectory(targetDirectoryPath);
             }
