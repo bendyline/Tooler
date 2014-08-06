@@ -38,7 +38,7 @@ namespace Bendyline.Tools.VersionWriter
             DateTime dtNow = DateTime.Now;
 
             buildNumber = buildNumber + dtNow.Month;
-            buildNumber = buildNumber + ((dtNow.Year - 2011) * 12);
+            buildNumber = buildNumber + ((dtNow.Year - 2014) * 12);
             buildNumber *= 100;
 
             buildNumber += dtNow.Day;
